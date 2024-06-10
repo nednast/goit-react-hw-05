@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { requestMovie } from "../components/services/services";
-import MovieSearchList from "../components/MovieSearchList/MovieSearchList";
+import MovieList from "../components/MovieList/MovieList";
 import { useSearchParams } from "react-router-dom";
 import toast from "react-hot-toast";
 import Loader from "../components/Loader/Loader";
@@ -52,7 +52,7 @@ function MoviesPage() {
         />
         <button type="submit">Search</button>
       </form>
-      <MovieSearchList movies={movies} defLocation="/movies" />
+      <MovieList movies={movies} defLocation="/movies" />
     </div>
   );
 }
