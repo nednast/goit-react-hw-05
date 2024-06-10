@@ -52,7 +52,7 @@ function MoviesPage() {
         />
         <button type="submit">Search</button>
       </form>
-      <MovieList movies={movies} defLocation="/movies" />
+      <MovieList trends={movies} />
     </div>
   );
 }
