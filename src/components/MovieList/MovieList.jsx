@@ -8,12 +8,7 @@ const MovieList = ({ trends }) => {
       {trends.map((movie) => (
         <li key={movie.id}>
           {movie.id && (
-            <NavLink
-              to={{
-                pathname: `/movies/${movie.id}`,
-                state: { from: location },
-              }}
-            >
+            <NavLink to={`/movies/${movie.id}`} state={location}>
               {movie.original_title}
             </NavLink>
           )}
